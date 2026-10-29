@@ -1,0 +1,16 @@
+Deen Core AI — Android APK Build
+
+এই workflow-এর চূড়ান্ত আউটপুট হলো Android APK ফাইল; ওয়েবসাইট ZIP/ওয়েব বিল্ড আর্টিফ্যাক্ট আপলোড করা হয় না।
+
+GitHub-এ চালানোর ধাপ:
+1. এই ZIP Extract করুন।
+2. এর ভেতরের Deen-Core-Ai-Full-Fixed ফোল্ডারের CONTENTS আপনার repository root-এ আপলোড/প্রতিস্থাপন করুন; পুরো folder-টিকে nested folder হিসেবে রেখে দেবেন না।
+3. GitHub → Actions → Build Android APK → Run workflow চাপুন।
+4. সফল হলে workflow run-এর Artifacts অংশে Deen-Core-AI-APK ডাউনলোড করুন।
+5. ZIP artifact Extract করলে app-debug.apk পাবেন; Android ফোনে সেটি ইনস্টল করুন।
+
+নোট:
+- Vite build ধাপটি Capacitor-কে অ্যাপের HTML/CSS/JS ফাইল Android APK-তে এমবেড করতে লাগে। চূড়ান্ত ডাউনলোডযোগ্য ফলাফল APK।
+- এটি debug APK, Play Store release-signed APK নয়।
+- এই workflow এখানে চালিয়ে যাচাই করা হয়নি; GitHub Actions-এর log-ই প্রকৃত ফল জানাবে।
+- Firebase ও Gemini API-এর runtime config আলাদাভাবে সেট করতে হতে পারে। Node/Express backend APK-এর ভেতরে স্বয়ংক্রিয়ভাবে চলে না।

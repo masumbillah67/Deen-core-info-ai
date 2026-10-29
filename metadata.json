@@ -1,0 +1,7 @@
+{
+  "name": "Deen Core AI",
+  "description": "Comprehensive Islamic spiritual companion featuring accurate prayer times, Quran reader, authentic Hadith, Hisnul Muslim Duas, interactive digital Tasbih, Zakat calculator, and Deen AI knowledge assistant.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
