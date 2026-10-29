@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ChatSession, ChatMessage, UserProfile, AppSettings } from './types';
-import { Sidebar } from './components/Sidebar';
-import { ChatArea } from './components/ChatArea';
-import { ProfileModal } from './components/ProfileModal';
-import { SettingsModal } from './components/SettingsModal';
-import { AuthModal } from './components/AuthModal';
+import { Sidebar } from './Sidebar';
+import { ChatArea } from './ChatArea';
+import { ProfileModal } from './ProfileModal';
+import { SettingsModal } from './SettingsModal';
+import { AuthModal } from './AuthModal';
 import { 
   auth, 
   onAuthStateChanged, 
